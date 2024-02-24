@@ -1,3 +1,8 @@
+import subprocess
+import sys
+
+# Install textblob
+subprocess.check_call([sys.executable, "-m", "pip", "install", "textblob"])
 from textblob import TextBlob
 import pandas as pd
 import streamlit as st
